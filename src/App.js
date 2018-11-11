@@ -10,11 +10,14 @@ class App extends Component {
     }
   }
   render() {
+    const Names = (props) => <h1>{props.name}</h1>;
     return (
       <div style={styles.container}>
         <h1 style={styles.title}>Las tecnologias del Front</h1>
         <ul style={styles.list}>
-          {/* Tu codigo va aca */}
+          {this.state.list.map((name) =>
+            <Names name={name} />
+          )}
         </ul>
       </div>
     );
