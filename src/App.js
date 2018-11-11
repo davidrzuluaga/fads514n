@@ -10,7 +10,7 @@ class App extends Component {
     }
   }
   render() {
-    const Names = (props) => <h1>{props.name}</h1>;
+    const Names = (props) => <li>{props.name}</li>;
     return (
       <div style={styles.container}>
         <h1 style={styles.title}>Las tecnologias del Front</h1>
